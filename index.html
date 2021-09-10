@@ -17,6 +17,8 @@
         rel="stylesheet">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="assets/plugins/owlcarousel2/assets/owl.theme.default.min.css" rel="stylesheet">
+
     <title>Arvino</title>
 
     <style>
@@ -186,7 +188,7 @@
         </div>
     </div>
 
-    <div class="container" id="skill">
+    <div class="container my-5" id="skill">
         <div class="row" data-aos="fade-up">
             <div class="col text-center">
                 <h2 class="card-title">Skill</h2>
@@ -198,42 +200,43 @@
                     <div class="card-body text-center">
                         <div class="row">
                             <div class="col-6 col-md-4 mb-4">
-                                <div class="card shadow border">
+                                <div class="card shadow border" style="transform-style: preserve-3d" data-tilt>
                                     <div class="card-body">
-                                        <img src="/assets/images/skills/flutter.png" class="img-fluid">
+                                        <img src="/assets/images/skills/flutter.png" class="img-fluid"
+                                            style="transform: translateZ(20px)">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-6 col-md-4 mb-4">
-                                <div class="card shadow border">
+                                <div class="card shadow border" style="transform-style: preserve-3d" data-tilt>
                                     <div class="card-body">
                                         <img src="/assets/images/skills/laravel.png" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-6 col-md-4 mb-4">
-                                <div class="card shadow border">
+                                <div class="card shadow border" style="transform-style: preserve-3d" data-tilt>
                                     <div class="card-body">
                                         <img src="/assets/images/skills/vuejs.png" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-6 col-md-4 mb-4">
-                                <div class="card shadow border">
+                                <div class="card shadow border" style="transform-style: preserve-3d" data-tilt>
                                     <div class="card-body">
                                         <img src="/assets/images/skills/php.png" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-6 col-md-4 mb-4">
-                                <div class="card shadow border">
+                                <div class="card shadow border" style="transform-style: preserve-3d" data-tilt>
                                     <div class="card-body">
                                         <img src="/assets/images/skills/mysql.png" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-6 col-md-4 mb-4">
-                                <div class="card shadow border">
+                                <div class="card shadow border" data-tilt>
                                     <div class="card-body">
                                         <img src="/assets/images/skills/html-css-js.png" class="img-fluid">
                                     </div>
@@ -242,6 +245,49 @@
                         </div>
 
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5" id="projek">
+        <div class="row" data-aos="fade-up">
+            <div class="col text-center">
+                <h2 class="card-title">Projek</h2>
+            </div>
+        </div>
+        <div class="row" data-aos="fade-up">
+            <div class="col">
+                <div class="card border-0">
+                    <div class="card-body">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-dark">
+        <div class="container py-5" id="projek">
+            <div class="row">
+                <div class="col-4 text-white">
+                    <h2>Kontak</h2>
+                    <table class="table table-borderless table-sm text-white">
+                        <tbody>
+                            <tr>
+                                <td>Nama</td>
+                                <td>: Arvino</td>
+                            </tr>
+                            <tr>
+                                <td>Telp</td>
+                                <td>: +6285155115258</td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td>: arvinoart@gmail.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -257,6 +303,8 @@
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/plugins/owlcarousel2/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
 
     <script>
         AOS.init();
@@ -267,6 +315,18 @@
                 document.getElementById('navbar').className = 'absolute';
             }
         })
+
+        $('.nonloop').owlCarousel({
+            center: true,
+            items: 2,
+            loop: false,
+            margin: 10,
+            responsive: {
+                600: {
+                    items: 4
+                }
+            }
+        });
     </script>
 </body>
 
