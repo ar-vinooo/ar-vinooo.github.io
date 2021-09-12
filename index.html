@@ -109,6 +109,24 @@
                 transform: translateY(0);
             }
         }
+
+        .skill-card>.card-body>.skill-img {
+            transform: translateZ(0px);
+            filter: grayscale();
+
+            transition-duration: 300ms;
+        }
+
+        .skill-card:hover>.card-body>.skill-img {
+            transform: translateZ(30px);
+            filter: none;
+
+            transition-duration: 300ms;
+        }
+
+        .skill-card {
+            transform-style: preserve-3d;
+        }
     </style>
 </head>
 
@@ -200,45 +218,44 @@
                     <div class="card-body text-center">
                         <div class="row">
                             <div class="col-6 col-md-4 mb-4">
-                                <div class="card shadow border" style="transform-style: preserve-3d" data-tilt>
+                                <div class="card shadow border skill-card" data-tilt>
                                     <div class="card-body">
-                                        <img src="/assets/images/skills/flutter.png" class="img-fluid"
-                                            style="transform: translateZ(20px)">
+                                        <img src="/assets/images/skills/flutter.png" class="img-fluid skill-img">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-6 col-md-4 mb-4">
-                                <div class="card shadow border" style="transform-style: preserve-3d" data-tilt>
+                                <div class="card shadow border skill-card" data-tilt>
                                     <div class="card-body">
-                                        <img src="/assets/images/skills/laravel.png" class="img-fluid">
+                                        <img src="/assets/images/skills/laravel.png" class="img-fluid skill-img">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-6 col-md-4 mb-4">
-                                <div class="card shadow border" style="transform-style: preserve-3d" data-tilt>
+                                <div class="card shadow border skill-card" data-tilt>
                                     <div class="card-body">
-                                        <img src="/assets/images/skills/vuejs.png" class="img-fluid">
+                                        <img src="/assets/images/skills/vuejs.png" class="img-fluid skill-img">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-6 col-md-4 mb-4">
-                                <div class="card shadow border" style="transform-style: preserve-3d" data-tilt>
+                                <div class="card shadow border skill-card" data-tilt>
                                     <div class="card-body">
-                                        <img src="/assets/images/skills/php.png" class="img-fluid">
+                                        <img src="/assets/images/skills/php.png" class="img-fluid skill-img">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-6 col-md-4 mb-4">
-                                <div class="card shadow border" style="transform-style: preserve-3d" data-tilt>
+                                <div class="card shadow border skill-card" data-tilt>
                                     <div class="card-body">
-                                        <img src="/assets/images/skills/mysql.png" class="img-fluid">
+                                        <img src="/assets/images/skills/mysql.png" class="img-fluid skill-img">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-6 col-md-4 mb-4">
-                                <div class="card shadow border" data-tilt>
+                                <div class="card shadow border skill-card" data-tilt>
                                     <div class="card-body">
-                                        <img src="/assets/images/skills/html-css-js.png" class="img-fluid">
+                                        <img src="/assets/images/skills/html-css-js.png" class="img-fluid skill-img">
                                     </div>
                                 </div>
                             </div>
