@@ -1,28 +1,15 @@
 <!doctype html>
-<html lang="en">
-
-<head>
-    <!-- Required meta tags -->
+<html lang="en" class="scroll-smooth">
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-
-    <link href="assets/plugins/font-awesome/css/all.css" rel="stylesheet">
-    <!--load all styles -->
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/plugins/owlcarousel2/assets/owl.carousel.min.css">
-    <link href="assets/plugins/owlcarousel2/assets/owl.theme.default.min.css" rel="stylesheet">
-
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://kit.fontawesome.com/0c62331395.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+     <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Arvino</title>
 
     <style>
@@ -30,520 +17,157 @@
             font-family: 'Poppins', sans-serif;
         }
 
-        .header {
-            background-image: url('assets/images/bg.jpg'), linear-gradient(white, black), linear-gradient(#eb01a5, #d13531);
-            height: 100vh;
-            background-size: cover;
-            background-position: center;
-
-        }
-
-
-        .float {
-            position: fixed;
-            background-color: white;
-            box-shadow: 0 0 10px #4d4d4d;
-            animation-name: show2;
-            animation-duration: 300ms;
-            z-index: 1;
-        }
-
-        .float>div>nav>a {
-            color: black;
-        }
-
-        .float>div>nav>div>ul>.nav-item>.nav-link {
-            font-weight: 600;
-            border-radius: 5px;
-            padding: 2px 5px;
-            margin: 2px 5px;
-            color: black;
-        }
-
-        .float>div>nav>div>ul>.nav-item>.nav-link:hover {
-            background-color: #C92A29;
-            color: white;
-        }
-
-
-        .absolute {
-            position: absolute;
-            animation-name: show;
-            animation-duration: 300ms;
-            z-index: 1;
-            padding-top: 25px;
-        }
-
-        .absolute>div>nav>a {
-            color: white;
-        }
-
-        .absolute>div>nav>div>ul>.nav-item>.nav-link {
-            font-weight: 600;
-            border-radius: 5px;
-            padding: 2px 5px;
-            margin: 2px 5px;
-            color: white;
-        }
-
-        .absolute>div>nav>div>ul>.nav-item>.nav-link:hover {
-            background-color: white;
-            color: black;
-        }
-
-
-        @keyframes show {
-            from {
-                transform: translateY(-100%);
-            }
-
-            to {
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes show2 {
-            from {
-                opacity: 0;
-                transform: translateY(-100%);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .skill-card>.card-body>.skill-img {
-            transform: translateZ(0px);
-            filter: grayscale();
-
-            transition-duration: 300ms;
-        }
-
-        .skill-card:hover>.card-body>.skill-img {
-            transform: translateZ(30px);
-            filter: none;
-
-            transition-duration: 300ms;
-        }
-
-        .skill-card {
-            transform-style: preserve-3d;
-        }
-
-        .button-sosmed {
-            color: white;
-            text-decoration: none;
-        }
-
-        .button-sosmed:hover {
-            color: #DF1740;
-            text-decoration: none;
-        }
     </style>
-</head>
 
-<body>
-    <div style="width: 100%;" class="absolute" id="navbar">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand h1 m-0" href="#" style="font-weight: 600;">
-                    <img src="assets/images/logo.webp" width="30" height="30"
-                        class="d-inline-block align-top rounded-circle" alt="">
-                    Vino
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="collapse" href="#tentang-saya">Tentang Saya</a>
+  </head>
+  <body>
+    <div>
+        <div x-data="{atTop: true}" @scroll.window="atTop = (window.pageYOffset < 80) ? true: false">
+            <header class=" p-8 w-full absolute animate__animated animate__slideInDown animate__faster text-white z-10" :class="{'hidden': !atTop}">
+                <nav class="flex justify-between  items-center  mx-auto">
+                    <div class="flex items-center gap-2">
+                        <img class="rounded-full w-8 shadow-xl" src="/assets/images/logo.webp" alt="logo" />
+                        <span class="font-bold text-xl">Vino</span>
+                    </div>
+                    <ul class="flex gap-2">
+                        <li>
+                            <a class="font-semibold rounded px-2 py-1 hover:bg-white hover:text-black hover:shadow-xl transition-all duration-75 ease-in " href="#tentang-saya" >Tentang Saya</a>
                         </li>
-                        <li class="nav-item">
-                            <a class=" nav-link" data-toggle="collapse" href="#skill">Skill</a>
+                        <li>
+                            <a class="font-semibold rounded px-2 py-1 hover:bg-white hover:text-black hover:shadow-xl transition-all duration-75 ease-in " href="#keahlian" >Keahlian</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="collapse" href="#projek">Projek</a>
+                        <li>
+                            <a class="font-semibold rounded px-2 py-1 hover:bg-white hover:text-black hover:shadow-xl transition-all duration-75 ease-in " href="#projek" >Projek</a>
                         </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" data-toggle="collapse" href="#kontak">Kontak</a>
+                        <li>
+                            <a class="font-semibold rounded px-2 py-1 hover:bg-white hover:text-black hover:shadow-xl transition-all duration-75 ease-in " href="#kontak" >Kontak</a>
                         </li>
                     </ul>
-                </div>
-            </nav>
+                </nav>
+            </header>
+            <header class="bg-white p-4 fixed w-full animate__animated animate__slideInDown animate__faster z-10" :class="{'hidden': atTop}">
+                <nav class="flex justify-between  items-center max-w-6xl mx-auto">
+                    <div class="flex items-center gap-2">
+                        <img class="rounded-full w-8" src="/assets/images/logo.webp" alt="logo" />
+                        <span class="font-bold text-xl">Vino</span>
+                    </div>
+                    <ul class="flex gap-2">
+                        <li>
+                            <a class="font-semibold rounded px-2 py-1 hover:bg-red-500 hover:text-white hover:shadow-xl transition-all duration-75 ease-in " href="#tentang-saya" >Tentang Saya</a>
+                        </li>
+                        <li>
+                            <a class="font-semibold rounded px-2 py-1 hover:bg-red-500 hover:text-white hover:shadow-xl transition-all duration-75 ease-in " href="#keahlian" >Keahlian</a>
+                        </li>
+                        <li>
+                            <a class="font-semibold rounded px-2 py-1 hover:bg-red-500 hover:text-white hover:shadow-xl transition-all duration-75 ease-in " href="#projek" >Projek</a>
+                        </li>
+                        <li>
+                            <a class="font-semibold rounded px-2 py-1 hover:bg-red-500 hover:text-white hover:shadow-xl transition-all duration-75 ease-in " href="#kontak" >Kontak</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
         </div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row header align-items-center">
-            <div class="col-12 text-white text-center justify-content-center">
-                <div class="d-inline-flex text-left"
-                    style="vertical-align: middle; justify-content: center; align-items: center;">
-                    <div style="display: inline-block;" data-aos="fade-right">
-                        <img src="/assets/images/logo.webp" class="rounded-circle d-inline-block align-top mb-1 mr-2"
-                            width="70px"><span style="font-size: 60px; font-weight: bold;">Vino</span>
-                        <p style="font-size: 30px; font-weight: 600; margin-bottom: 10px;">Hallo my name is arvino,
-                            <br>i'am Fullstack Developer
-                        </p>
-                        <div class="text-right px-4">
-                            <a href="https://www.linkedin.com/in/arvino-vino" class="button-sosmed mr-2"
-                                target="_blank"><i class="fab fa-linkedin" style="font-size: 30px;"></i> </a>
-                            <a href="https://web.facebook.com/vinoar500/" class="button-sosmed mr-2" target="_blank"><i
-                                    class="fab fa-facebook-square" style="font-size: 30px;"></i> </a>
-                            <a href="https://www.instagram.com/ar.vinooo/" class="button-sosmed mr-2" target="_blank"><i
-                                    class="fab fa-instagram-square" style="font-size: 30px;"></i> </a>
-                            <a href="/assets/file/CV & PORTOFOLIO.pdf" class="button-sosmed" target="_blank"><i
-                                class="fa fa-address-card" style="font-size: 30px;"></i> </a>
+        <section>
+            <div style="height: 100vh; background: url('/assets/images/bg.jpg'); background-size: cover; background-repeat: no-repeat;">
+                <div class="absolute top-0 right-0 left-0 bottom-0 flex text-white justify-center items-center z-0">
+                    <div class="animate__animated animate__fadeInLeft flex flex-col gap-2">
+                        <div class="flex items-center gap-2">
+                            <img class="rounded-full w-20" src="/assets/images/logo.webp" />
+                            <h2 class="text-5xl font-semibold">Vino</h2>
+                        </div>
+                        <h2 class="text-3xl font-semibold leading-snug">Hallo nama saya Arvino, <br/> i'am Fullstack Developer</h2>
+                        <div class="flex justify-center gap-2 ">
+                            <a href="https://www.linkedin.com/in/arvino-vino" target="_blank" class="hover:opacity-90 hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all ease-in border border-gray-800 hover:border-gray-50"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+                            <a href="https://github.com/ar-vinooo" target="_blank" class="hover:opacity-90 hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all ease-in border border-gray-600 hover:border-gray-50"><img  src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /></a>
+                            <a href="https://www.hackerrank.com/arvinoart"  class="hover:opacity-90 hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all ease-in border border-gray-800 hover:border-gray-50"><img src="https://img.shields.io/badge/-Hackerrank-2EC866?style=for-the-badge&logo=HackerRank&logoColor=white" /></a>
                         </div>
                     </div>
-                    <img data-aos="fade-left" class="d-none d-md-block" src="/assets/images/profile.png"
-                        style="width: 20vw">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container my-5" id="tentang-saya">
-        <div class="row" data-aos="fade-up">
-            <div class="col text-center">
-                <h2 class="card-title">Tentang saya</h2>
-            </div>
-        </div>
-        <div class="row justify-content-center" data-aos="fade-up">
-            <div class="col-12">
-                <div class="card border-0">
-                    <div class="card-body">
-                        <p class="card-text" style="text-align: justify;">Hallo perkenalkan nama saya arvino, saya
-                            sangat tertarik
-                            dengan dunia IT, banyak hal yang saya pelajari di dunia
-                            IT salah satunya adalah pemrograman.
-                        </p>
+                    <div class="animate__animated animate__fadeInRight">
+                        <img class="w-80" src="/assets/images/profile.png" />
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="container my-5" id="skill">
-        <div class="row" data-aos="fade-up">
-            <div class="col text-center">
-                <h2 class="card-title">Skill</h2>
+            <div class="bg-[#f0f0f0] text-[#4e4e4e]" id="tentang-saya">
+                <div class="container mx-auto p-20 flex flex-col gap-5">
+                    <h2 class="text-2xl font-semibold">Tentang Saya</h2>
+                    <p style="text-align: justify;">Perkenalkan nama saya Arvino, Saya adalah seorang fullstack developer yang mampu beradaptasi dengan teknologi terbaru dalam pengembangan aplikasi mobile maupun web. Saya telah memiliki banyak pengalaman pembuatan serta pengembangan aplikasi mobile dan web. Saya selalu mengembangkan diri saya agar dapat menjadi programmer profesional. Saya juga seorang freelancer. </p>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <div class="card border-0">
-                    <div class="card-body text-center">
-                        <div class="row">
-                            <div class="col-6 col-md-4 mb-4">
-                                <div class="card shadow border skill-card" data-tilt data-aos="fade-up">
-                                    <div class="card-body">
-                                        <img src="/assets/images/skills/flutter.png" class="img-fluid skill-img">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-4 mb-4">
-                                <div class="card shadow border skill-card" data-tilt data-aos="fade-up"
-                                    data-aos-delay="100">
-                                    <div class="card-body">
-                                        <img src="/assets/images/skills/laravel.png" class="img-fluid skill-img">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-4 mb-4">
-                                <div class="card shadow border skill-card" data-tilt data-aos="fade-up"
-                                    data-aos-delay="200">
-                                    <div class="card-body">
-                                        <img src="/assets/images/skills/vuejs.png" class="img-fluid skill-img">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-4 mb-4">
-                                <div class="card shadow border skill-card" data-tilt data-aos="fade-up"
-                                    data-aos-delay="300">
-                                    <div class="card-body">
-                                        <img src="/assets/images/skills/php.png" class="img-fluid skill-img">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-4 mb-4">
-                                <div class="card shadow border skill-card" data-tilt data-aos="fade-up"
-                                    data-aos-delay="400">
-                                    <div class="card-body">
-                                        <img src="/assets/images/skills/mysql.png" class="img-fluid skill-img">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-4 mb-4">
-                                <div class="card shadow border skill-card" data-tilt data-aos="fade-up"
-                                    data-aos-delay="500">
-                                    <div class="card-body">
-                                        <img src="/assets/images/skills/html-css-js.png" class="img-fluid skill-img">
-                                    </div>
-                                </div>
+            <div id="keahlian">
+                <div class="container mx-auto p-20 flex flex-col gap-5">
+                    <h2 class="text-2xl  font-semibold">Keahlian</h2>
+                    <div class="flex flex-col gap-4">
+                        <div>
+                            <div class="mb-1">Website</div>
+                            <div class="flex gap-1">
+                                <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white">
+                                <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+                                <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+                                <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
+                                <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white">
+                                <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
+                                <img src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D">
+                                <img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white">
+                                <img src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white">
+                                <img src="https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E">
+                                <img src="https://img.shields.io/badge/livewire-4e56a6?style=for-the-badge&logo=livewire&logoColor=white">
                             </div>
                         </div>
-
+                        <div>
+                            <div class="mb-1">Mobile</div>
+                            <div class="flex gap-1">
+                                <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white">
+                                <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="mb-1">Backend</div>
+                            <div class="flex gap-1">
+                                <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white">
+                                <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white">
+                                <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white">
+                                <img src="https://img.shields.io/badge/Socket.io-010101?&style=for-the-badge&logo=Socket.io&logoColor=white">
+                                <img src="https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="mb-1">UI</div>
+                            <div class="flex gap-1">
+                                <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white">
+                                <img src="https://img.shields.io/badge/Chakra--UI-319795?style=for-the-badge&logo=chakra-ui&logoColor=white">
+                                <img src="https://img.shields.io/badge/Chart.js-FF6384?style=for-the-badge&logo=chartdotjs&logoColor=white">
+                                <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="mb-1">Database</div>
+                            <div class="flex gap-1">
+                                <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white">
+                                <img src="https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white">
+                                <img src="https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=Oracle&logoColor=white">
+                                <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white">
+                                <img src="https://img.shields.io/badge/redis-%23DD0031.svg?&style=for-the-badge&logo=redis&logoColor=white">
+                                <img src="https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white">
+                                <img src="https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="mb-1">Other</div>
+                            <div class="flex gap-1">
+                                <img src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white">
+                                <img src="https://img.shields.io/badge/apple%20silicon-333333?style=for-the-badge&logo=apple&logoColor=white">
+                                <img src="https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white">
+                                <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white">
+                            </div>
+                        </div>
+                      
                     </div>
                 </div>
             </div>
-        </div>
+        </section>        
     </div>
 
-    <div class="container-fluid my-5" id="projek">
-        <div class="row" data-aos="fade-up">
-            <div class="col text-center">
-                <h2 class="card-title">Projek</h2>
-            </div>
-        </div>
-        <div class="row py-4" data-aos="fade-up">
-            <div class="col">
-                <div class="owl-carousel owl-theme nonloop">
-                    <div class="item">
-                        <div class="card shadow border">
-                            <div class="card-body p-0">
-                                <div
-                                    style="width: 100%;height: 50vh; background-size: cover; background-position: center; background-image: url(/assets/images/project/e-learning-web.png);">
-                                </div>
-                                <div class="p-4">
-                                    <h5 class="card-title">e-Learning SMK Website</h5>
-                                    <p class="card-text">Technologi : Laravel</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card shadow border">
-                            <div class="card-body p-0">
-                                <div
-                                    style="width: 100%;height: 50vh; background-size: cover; background-position: center; background-image: url(/assets/images/project/e-learning-android.jpg);">
-                                </div>
-                                <div class="p-4">
-                                    <h5 class="card-title">e-Learning SMK Android </h5>
-                                    <p class="card-text">Technologi : Flutter, Laravel</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card shadow border">
-                            <div class="card-body p-0">
-                                <div
-                                    style="width: 100%;height: 50vh; background-size: cover; background-position: center; background-image: url(/assets/images/project/e-learning2-web.png);">
-                                </div>
-                                <div class="p-4">
-                                    <h5 class="card-title">e-Learning Madrasah Web</h5>
-                                    <p class="card-text">Technologi : Laravel</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card shadow border">
-                            <div class="card-body p-0">
-                                <div
-                                    style="width: 100%;height: 50vh; background-size: cover; background-position: center; background-image: url(/assets/images/project/sistem-klinik-web.png);">
-                                </div>
-                                <div class="p-4">
-                                    <h5 class="card-title">Klink Pratama</h5>
-                                    <p class="card-text">Technologi : Laravel</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card shadow border">
-                            <div class="card-body p-0">
-                                <div
-                                    style="width: 100%;height: 50vh; background-size: cover; background-position: center; background-image: url(/assets/images/project/petshop-web.png);">
-                                </div>
-                                <div class="p-4">
-                                    <h5 class="card-title">SIG PetShop</h5>
-                                    <p class="card-text">Technologi : Laravel</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card shadow border">
-                            <div class="card-body p-0">
-                                <div
-                                    style="width: 100%;height: 50vh; background-size: cover; background-position: center; background-image: url(/assets/images/project/nolehjambi-web.png);">
-                                </div>
-                                <div class="p-4">
-                                    <h5 class="card-title">Noleh Jambi</h5>
-                                    <p class="card-text">Technologi : Laravel</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card shadow border">
-                            <div class="card-body p-0">
-                                <div
-                                    style="width: 100%;height: 50vh; background-size: cover; background-position: center; background-image: url(/assets/images/project/e-doremi-web.png);">
-                                </div>
-                                <div class="p-4">
-                                    <h5 class="card-title">e-Doremi PTPN VI</h5>
-                                    <p class="card-text">Technologi : Laravel</p>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card shadow border">
-                            <div class="card-body p-0">
-                                <div
-                                    style="width: 100%;height: 50vh; background-size: cover; background-position: center; background-image: url(/assets/images/project/e-planters-web.png);">
-                                </div>
-                                <div class="p-4">
-                                    <h5 class="card-title">e-Planters PTPN VI</h5>
-                                    <p class="card-text">Technologi : Laravel</p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card shadow border">
-                            <div class="card-body p-0">
-                                <div
-                                    style="width: 100%;height: 50vh; background-size: cover; background-position: center; background-image: url(/assets/images/project/e-contract-web.png);">
-                                </div>
-                                <div class="p-4">
-                                    <h5 class="card-title">e-Contract PTPN VI</h5>
-                                    <p class="card-text">Technologi : Laravel</p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card">
-                            <div class="card-body p-0">
-                                <div
-                                    style="width: 100%;height: 50vh; background-size: cover; background-position: center; background-image: url(/assets/images/project/wablas-web.png);">
-                                </div>
-                                <div class="p-4">
-                                    
-                                <h5 class="card-title">Wa Blaster PTPN VI</h5>
-                                <p class="card-text">Technologi : Laravel</p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card">
-                            <div class="card-body p-0">
-                                <div
-                                    style="width: 100%;height: 50vh; background-size: cover; background-position: center; background-image: url(/assets/images/project/stanfor-web.png);">
-                                </div>
-                                <div class="p-4">
-                                    <h5 class="card-title">Standar Formasi Karyawan PTPN VI</h5>
-                                    <p class="card-text">Technologi : Laravel</p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card">
-                            <div class="card-body p-0">
-                                <div
-                                    style="width: 100%;height: 50vh; background-size: cover; background-position: center; background-image: url(/assets/images/project/kernel-web.png);">
-                                </div>
-                                <div class="p-4">
-                                    <h5 class="card-title">Presensi Finger Print Karyawan PTPN VI</h4>
-                                        <p class="card-text">Technologi : Laravel</p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="bg-dark">
-        <div class="container py-5" id="kontak">
-            <div class="row">
-                <div class="col-12 text-white">
-                    <h2>Kontak</h2>
-                    <table class="table table-borderless table-sm text-white">
-                        <tbody>
-                            <tr>
-                                <td>Nama</td>
-                                <td>: Arvino</td>
-                            </tr>
-                            <tr>
-                                <td>Email</td>
-                                <td>: arvinoart@gmail.com</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="d-none" href="https://www.freepik.com/vectors/background">Background vector created by freepik -
-        www.freepik.com</div>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="assets/plugins/owlcarousel2/owl.carousel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
-
-    <script>
-        AOS.init();
-        document.addEventListener('scroll', function (e) {
-            if (window.scrollY > 70) {
-                $('#navbar').addClass('float');
-                $('#navbar').removeClass('absolute');
-                $('.navbar').addClass('navbar-light');
-                $('.navbar').removeClass('navbar-dark');
-            } else {
-                $('#navbar').addClass('absolute');
-                $('#navbar').removeClass('float');
-                $('.navbar').addClass('navbar-dark');
-                $('.navbar').removeClass('navbar-light');
-            }
-        })
-
-        $('.nonloop').owlCarousel({
-            center: true,
-            items: 1,
-            loop: false,
-            margin: 10,
-            responsive: {
-                600:{
-                    items:1
-                },
-                1000:{
-                    items:4
-                }
-            }
-        });
-
-        $(document).on('click', 'a[href^="#"]', function (event) {
-            event.preventDefault();
-
-            $('html, body').animate({
-                scrollTop: $($.attr(this, 'href')).offset().top - 100
-            }, 500);
-        });
-    </script>
-</body>
-
+ </body>
 </html>
