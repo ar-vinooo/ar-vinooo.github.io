@@ -23,13 +23,14 @@
   <body>
     <div style="min-width: 20px;">
         <div x-data="{atTop: true}" @scroll.window="atTop = (window.pageYOffset < 80) ? true: false">
+
             <header class=" p-8 w-full absolute animate__animated animate__slideInDown animate__faster text-white z-10" :class="{'hidden': !atTop}">
                 <nav class="flex justify-between  items-center  mx-auto">
                     <div class="flex items-center gap-2">
                         <img class="rounded-full w-8 shadow-xl" src="/assets/images/logo.webp" alt="logo" />
                         <span class="font-bold text-xl">Vino</span>
                     </div>
-                    <ul class="flex gap-2">
+                    <ul class="xl:flex gap-2 hidden">
                         <li>
                             <a class="font-semibold rounded px-2 py-1 hover:bg-white hover:text-black hover:shadow-xl transition-all duration-75 ease-in " href="#tentang-saya" >Tentang Saya</a>
                         </li>
@@ -49,6 +50,7 @@
                             <a class="font-semibold rounded px-2 py-1 hover:bg-white hover:text-black hover:shadow-xl transition-all duration-75 ease-in " href="#kontak" >Kontak</a>
                         </li>
                     </ul>
+                    <!-- <button class="border-2 px-2 py-1 rounded border-white xl:hidden block">Menu</button> -->
                 </nav>
             </header>
             <header class="bg-white shadow-xl p-4 fixed w-full animate__animated animate__slideInDown animate__faster z-10" :class="{'hidden': atTop}">
@@ -57,7 +59,7 @@
                         <img class="rounded-full w-8" src="/assets/images/logo.webp" alt="logo" />
                         <span class="font-bold text-xl">Vino</span>
                     </div>
-                    <ul class="flex gap-2">
+                    <ul class="sm:flex gap-2 hidden">
                         <li>
                             <a class="font-semibold rounded px-2 py-1 hover:bg-red-500 hover:text-white hover:shadow-xl transition-all duration-75 ease-in " href="#tentang-saya" >Tentang Saya</a>
                         </li>
@@ -84,7 +86,7 @@
         <section>
             <div style="height: 100vh; background: url('/assets/images/bg.jpg'); background-size: cover; background-repeat: no-repeat;">
                 <div class="absolute top-0 right-0 left-0 bottom-0 flex text-white justify-center items-center z-0">
-                    <div class="animate__animated animate__fadeInLeft flex flex-col gap-2">
+                    <div class="animate__animated xl:animate__fadeInLeft animate__fadeInUp flex flex-col gap-2">
                         <div class="flex items-center gap-2">
                             <img class="rounded-full w-20" src="/assets/images/logo.webp" />
                             <h2 class="text-5xl font-semibold">Vino</h2>
@@ -96,24 +98,24 @@
                             <a href="https://www.hackerrank.com/arvinoart" target="_blank" class="hover:opacity-90 hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all ease-in border border-gray-800 hover:border-gray-50"><img src="https://img.shields.io/badge/-Hackerrank-2EC866?style=for-the-badge&logo=HackerRank&logoColor=white" /></a>
                         </div>
                     </div>
-                    <div class="animate__animated animate__fadeInRight">
+                    <div class="animate__animated animate__fadeInRight hidden xl:block">
                         <img class="w-80" src="/assets/images/profile.png" />
                     </div>
                 </div>
             </div>
             <div class="bg-[#f0f0f0] text-[#4e4e4e]" id="tentang-saya">
-                <div class="container mx-auto p-20 flex flex-col gap-5">
+                <div class="container mx-auto md:p-20 p-5 flex flex-col gap-5">
                     <h2 class="text-2xl font-semibold">Tentang Saya</h2>
                     <p style="text-align: justify;">Perkenalkan nama saya Arvino, Saya seorang fullstack developer yang mampu beradaptasi dengan teknologi terbaru dalam pengembangan aplikasi mobile maupun web. Saya telah memiliki banyak pengalaman pengembangan aplikasi mobile dan web. Saya selalu mengembangkan diri saya agar dapat menjadi programmer profesional. Saya juga seorang freelancer. </p>
                 </div>
             </div>
             <div id="keahlian">
-                <div class="container mx-auto p-20 flex flex-col gap-5">
+                <div class="container mx-auto md:p-20 p-5 flex flex-col gap-5">
                     <h2 class="text-2xl  font-semibold">Keahlian</h2>
                     <div class="flex flex-col gap-4">
                         <div>
                             <div class="mb-1">Website</div>
-                            <div class="flex gap-1">
+                            <div class="flex flex-wrap gap-1">
                                 <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white">
                                 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
                                 <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
@@ -129,14 +131,14 @@
                         </div>
                         <div>
                             <div class="mb-1">Mobile</div>
-                            <div class="flex gap-1">
+                            <div class="flex flex-wrap gap-1">
                                 <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white">
                                 <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white">
                             </div>
                         </div>
                         <div>
                             <div class="mb-1">Backend</div>
-                            <div class="flex gap-1">
+                            <div class="flex flex-wrap gap-1">
                                 <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white">
                                 <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white">
                                 <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white">
@@ -146,7 +148,7 @@
                         </div>
                         <div>
                             <div class="mb-1">UI</div>
-                            <div class="flex gap-1">
+                            <div class="flex flex-wrap gap-1">
                                 <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white">
                                 <img src="https://img.shields.io/badge/Chakra--UI-319795?style=for-the-badge&logo=chakra-ui&logoColor=white">
                                 <img src="https://img.shields.io/badge/Chart.js-FF6384?style=for-the-badge&logo=chartdotjs&logoColor=white">
@@ -155,7 +157,7 @@
                         </div>
                         <div>
                             <div class="mb-1">Database</div>
-                            <div class="flex gap-1">
+                            <div class="flex flex-wrap gap-1">
                                 <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white">
                                 <img src="https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white">
                                 <img src="https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=Oracle&logoColor=white">
@@ -167,7 +169,7 @@
                         </div>
                         <div>
                             <div class="mb-1">Other</div>
-                            <div class="flex gap-1">
+                            <div class="flex flex-wrap gap-1">
                                 <img src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white">
                                 <img src="https://img.shields.io/badge/apple%20silicon-333333?style=for-the-badge&logo=apple&logoColor=white">
                                 <img src="https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white">
@@ -180,7 +182,7 @@
             </div>
             
             <div id="pengalaman-pekerjaan" class="border-t-2 bg-gradient-to-br to-[#010835] from-[#013179] text-white">
-                <div class="container mx-auto p-20 flex flex-col gap-5">
+                <div class="container mx-auto md:p-20 p-5 flex flex-col gap-5">
                     <h2 class="text-2xl  font-semibold">Pengalaman Pekerjaan</h2>
                     <div>
                         <div class="bg-[#013178]  w-full rounded p-5 mb-5 shadow-lg >
@@ -244,9 +246,9 @@
                 </div>
             </div>
             <div id="projek" class="border-t-2 ">
-                <div class="container mx-auto p-20 flex flex-col gap-5">
+                <div class="container mx-auto md:p-20 p-5 flex flex-col gap-5">
                     <h2 class="text-2xl  font-semibold">Projek</h2>
-                    <div class="flex flex-row gap-10">
+                    <div class="flex flex-col md:flex-row gap-10">
                         <div>
                             <div class="mb-1 font-semibold">Solo Projek</div>
                             <ul class="list-inside list-decimal">
